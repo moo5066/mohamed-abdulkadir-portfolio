@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -14,7 +13,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Manrope", sans-serif; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 a { color: inherit; text-decoration: none; }
 
 .portfolio { min-height: 100vh; overflow: hidden; position: relative; background: var(--bg); transition: background .3s, color .3s; }
@@ -28,6 +27,9 @@ a { color: inherit; text-decoration: none; }
 .portfolio.dark .metrics span,
 .portfolio.dark .roadmap-item p { color: var(--ink); }
 .portfolio.dark .button-ghost { color: var(--ink); border-color: var(--line); }
+.portfolio.dark .contact h2,
+.portfolio.dark .contact .eyebrow { color: var(--ink); }
+.portfolio.dark .footer { color: var(--muted); }
 .portfolio.dark .skill-card,
 .portfolio.dark .project-card,
 .portfolio.dark .theme-toggle { color: var(--ink); background: var(--surface); }
@@ -47,14 +49,14 @@ a { color: inherit; text-decoration: none; }
 .eyebrow span { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 15%, transparent); }
 h1, h2, h3, p { margin-top: 0; }
 .hero h1 { margin: 25px 0 24px; font-size: clamp(3.2rem, 6vw, 5.8rem); line-height: .98; letter-spacing: -.075em; max-width: 700px; }
-.hero h1 em, h2 em { font-family: "Manrope", sans-serif; font-weight: 500; color: var(--accent); letter-spacing: -.075em; }
+.hero h1 em, h2 em { font-weight: 500; color: var(--accent); letter-spacing: -.075em; }
 .hero-text { max-width: 510px; color: var(--muted); line-height: 1.8; font-size: .98rem; }
 .hero-text strong { color: var(--ink); }
 .hero-actions { display: flex; gap: 13px; margin: 34px 0 25px; }
 .button { min-height: 45px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 4px; padding: 0 18px; font-size: .78rem; font-weight: 800; transition: transform .2s, background .2s; }
 .button:hover { transform: translateY(-2px); }
 .button-primary { color: #fff; background: var(--ink); }
-.dark .button-primary { background: var(--accent); }
+.dark .button-primary { background: #f7faf9; color: #111217; }
 .button-ghost { border: 1px solid var(--line); }
 .button svg { font-size: 1.05rem; }
 .socials { display: flex; gap: 22px; color: var(--muted); font-size: .72rem; font-weight: 700; }
